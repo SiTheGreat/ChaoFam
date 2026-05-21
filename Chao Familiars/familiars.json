@@ -1,20 +1,22 @@
 [
   {
     "FamiliarId": "Si.ChaoFam_baseChao",
-    "DisplayName": "i18n:Si.ChaoFam.baseChao.DisplayName",
-    "Description": "i18n:Si.ChaoFam.baseChao.Description",
+    // "DisplayName": "Si.ChaoFam.baseChao.DisplayName", // i18ns don't seem to work here?
+    // "Description": "Si.ChaoFam.baseChao.Description", // i18ns don't seem to work here?
+    "DisplayName": "Chao",
+    "Description": "Chao can help others percieve you as more friendly.",
     "FamiliarType": "Social", // i8n?
     "ExcludeFromDefaultShop": false,
     "DefaultShopPrice": 5000,
     "AnimalSprite": "sprites/baseChao.png",
-    // "AnimalPortrait": "assets/portraits/FamiliarName.png",
-    // "AnimalDialogue": "assets/dialogue/FamiliarName.json",
+    // "AnimalPortrait": "assets/portraits/FamiliarName.png", // not using rn
+    // "AnimalDialogue": "assets/dialogue/FamiliarName.json", // not using rn
     "Speaks": false,
-    "AlwaysAnimate": true,
+    "AlwaysAnimate": false, // too jittery, so leaving off for now
     "Diet": "Herbivore", // i18n?
 
     "Needs": {
-      "FoodDecayPerDay": 0.34, // ~ every 3 days
+      "FoodDecayPerDay": 0.34, // ~ every 3 days - also, does eating 1 food set bar to full?
       "AttentionDecayPerDay": 0.34 // ~ every 3 days
     },
 
@@ -22,29 +24,59 @@
     "HatedItems": ["(O)20", "(O)399", "(O)395", "(O)253", "(O)433", "(O)248"], // coffee, onions
 
     "Assistance": {
-      "BuffIcon": "", // ask abt this
+      "BuffIcon": "", // no reference in VF (even tho it's called for some of those fams?)
       "InventorySize": 1,
       "AllowDeposit": true,
       "Abilities": [
 		// 0 hearts
-        [],
-		// 2 hearts
-        [],
-		// 4 hearts
         [
           {
-            "Id": "Si.ChaoFam_baseChao_FamFriend1",
+            "Id": "Si.ChaoFam_baseChao_FamFriend0",
             "AbilityClass": "FamiliarFriendship",
-            "Description": "i18n:Si.ChaoFam.baseChao.FamFriend",
+            "Description": "Si.ChaoFam.baseChao.Description", // exclude 'i18n:' part; this first field is what shows up in the familiar description in the shop
             "Proc": "OnNearby",
             "ProcTimer": 60,
             "Condition": "",
             "ProcSound": "",
             "ProcAnimation": true,
             "Args": {
-				"Range": "64",
-				"Amount": "5"
-			}
+              "Range": "64",
+              "Amount": "0"
+            }
+          }
+        ],
+		// 2 hearts
+        [
+          {
+            "Id": "Si.ChaoFam_baseChao_FamFriend00",
+            "AbilityClass": "FamiliarFriendship",
+            "Description": "Si.ChaoFam.baseChao.Description",
+            "Proc": "OnNearby",
+            "ProcTimer": 60,
+            "Condition": "",
+            "ProcSound": "",
+            "ProcAnimation": true,
+            "Args": {
+              "Range": "64",
+              "Amount": "0"
+            }
+          }
+        ],
+		// 4 hearts
+        [
+          {
+            "Id": "Si.ChaoFam_baseChao_FamFriend1",
+            "AbilityClass": "FamiliarFriendship",
+            "Description": "Si.ChaoFam.baseChao.FamFriend",
+            "Proc": "OnNearby",
+            "ProcTimer": 60,
+            "Condition": "",
+            "ProcSound": "",
+            "ProcAnimation": true,
+            "Args": {
+              "Range": "64",
+              "Amount": "5"
+            }
           }
         ],
 		// 6 hearts
@@ -52,21 +84,21 @@
           {
             "Id": "Si.ChaoFam_baseChao_FamFriend2",
             "AbilityClass": "FamiliarFriendship",
-            "Description": "i18n:Si.ChaoFam.baseChao.FamFriend",
+            "Description": "Si.ChaoFam.baseChao.FamFriend",
             "Proc": "OnNearby",
             "ProcTimer": 60,
             "Condition": "",
             "ProcSound": "",
             "ProcAnimation": true,
             "Args": {
-				"Range": "64",
-				"Amount": "10"
-			}
+              "Range": "64",
+              "Amount": "10"
+            }
           },
           {
             "Id": "Si.ChaoFam_baseChao_AnimFriend1",
             "AbilityClass": "FamiliarFriendship",
-            "Description": "i18n:Si.ChaoFam.baseChao.AnimFriend",
+            "Description": "Si.ChaoFam.baseChao.AnimFriend",
             "Proc": "OnNearby",
             "ProcTimer": 60,
             "Condition": "",
@@ -83,21 +115,21 @@
           {
             "Id": "Si.ChaoFam_baseChao_FamFriend3",
             "AbilityClass": "FamiliarFriendship",
-            "Description": "i18n:Si.ChaoFam.baseChao.FamFriend",
+            "Description": "Si.ChaoFam.baseChao.FamFriend",
             "Proc": "OnNearby",
             "ProcTimer": 60,
             "Condition": "",
             "ProcSound": "",
             "ProcAnimation": true,
             "Args": {
-				"Range": "64",
-				"Amount": "15"
-			}
+              "Range": "64",
+              "Amount": "15"
+            }
           },
           {
             "Id": "Si.ChaoFam_baseChao_AnimFriend2",
             "AbilityClass": "FamiliarFriendship",
-            "Description": "i18n:Si.ChaoFam.baseChao.AnimFriend",
+            "Description": "Si.ChaoFam.baseChao.AnimFriend",
             "Proc": "OnNearby",
             "ProcTimer": 60,
             "Condition": "",
@@ -111,16 +143,16 @@
           {
             "Id": "Si.ChaoFam_baseChao_npcFriend1",
             "AbilityClass": "FamiliarFriendship",
-            "Description": "i18n:Si.ChaoFam.baseChao.npcFriend",
+            "Description": "Si.ChaoFam.baseChao.npcFriend",
             "Proc": "OnNearby",
             "ProcTimer": 60,
             "Condition": "",
             "ProcSound": "",
             "ProcAnimation": true,
             "Args": {
-				"Range": "64",
-				"Amount": "5"
-			}
+              "Range": "64",
+              "Amount": "5"
+            }
           },
         ],
 		// 10 hearts
@@ -128,7 +160,7 @@
           {
             "Id": "Si.ChaoFam_baseChao_FamFriend4",
             "AbilityClass": "FamiliarFriendship",
-            "Description": "i18n:Si.ChaoFam.baseChao.FamFriend",
+            "Description": "Si.ChaoFam.baseChao.FamFriend",
             "Proc": "OnNearby",
             "ProcTimer": 60,
             "Condition": "",
@@ -142,30 +174,30 @@
           {
             "Id": "Si.ChaoFam_baseChao_AnimFriend3",
             "AbilityClass": "FamiliarFriendship",
-            "Description": "i18n:Si.ChaoFam.baseChao.AnimFriend",
+            "Description": "Si.ChaoFam.baseChao.AnimFriend",
             "Proc": "OnNearby",
             "ProcTimer": 60,
             "Condition": "",
             "ProcSound": "",
             "ProcAnimation": true,
             "Args": {
-				"Range": "64",
-				"Amount": "15"
-			}
+              "Range": "64",
+              "Amount": "15"
+            }
           },
           {
             "Id": "Si.ChaoFam_baseChao_npcFriend2",
             "AbilityClass": "FamiliarFriendship",
-            "Description": "i18n:Si.ChaoFam.baseChao.npcFriend",
+            "Description": "Si.ChaoFam.baseChao.npcFriend",
             "Proc": "OnNearby",
             "ProcTimer": 60,
             "Condition": "",
             "ProcSound": "",
             "ProcAnimation": true,
             "Args": {
-				"Range": "64",
-				"Amount": "10"
-			}
+              "Range": "64",
+              "Amount": "10"
+            }
           }
         ]
       ]

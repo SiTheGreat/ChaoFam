@@ -6,7 +6,7 @@
 	"UniqueID": "Si.ChaoFam",
 	"UpdateKeys": [ "Nexus:" ],
 	"ContentPackFor": {
-		"UniqueID": "CodysOasis.FAUNA",
+		"UniqueID": "CodysOasis.TotAG_FAUNA",
 		"MinimumVersion": "1.0.0"
 	},
 }
