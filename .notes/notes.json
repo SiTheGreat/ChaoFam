@@ -1,0 +1,19 @@
+Questions for Cody
+
+-don't see bufficon examples in vaelsfamiliars?
+-proctimer - for onnearby, does this reoccur after every cooldown? so with AnimalFriendship, if proctimer = 4, then if you just stand in the barn all day on a rainy day your animals get an additional friendship boost every 5s?
+-also does animalfriendship include pets
+-no i18n examples in vf; your format "i18n:i18nkeyhere" and standard cp format "{{i18n:i18nkeyhere}}" don't seem to work for dispname/descrip? UPDATE works in ability description fields BUT must exclude 'i18n:' part. Doesn't seem to work for displayname or familiar descrip.
+-your template manifest entry in your docs has a different contentpackfor uniqueid than FAUNA's actual uniqueid (CodysOasis.FAUNA vs CodysOasis.TotAG_FAUNA)
+-also FAUNA manifest version is 0.1.0 but docs use 1.0.0, causing error with minimumversion
+-your FAUNA manifest is missing a nexus update key (as well as totag and vf) :)
+-in smapi fauna might be cumulatively iterating on itself for every content pack
+[FAUNA] FAUNA loaded 11 familiar(s) total.
+[FAUNA] FAUNA loaded 12 familiar(s) total.
+-made 10 rows but didn't put any sprites for rows 5-9, kept them as placeholders. Noticed in game that the display sprite in the ouija board purchase menu was blank. Added numbers to those blank rows to see if it was showing any of them; it was showing the first sprite of row 5. Does that mean 5th row is required? Any specific sprites or just base front facing one?
+-description field in ouija board shop only reads ability description from 0-heart ability; if no ability defined (=[]), defaults to '???'
+-dunno if you care about this but doesn't play very well with controller
+-feeding, chatting, following, and depositing things into inventory seem to work. Not sure if abilities work.
+-not sure how to open the fam log? It looks like it should be the book in the den but interacting with it doesn't seem to do anything + no errors in smapi
+-alwaysanimate - goes really fast, kinda jittery?
+-food/attentiondecay: does a single food/interaction set that to 100%?
