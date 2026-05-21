@@ -1,0 +1,12 @@
+{
+	"Name": "[Si] Chao Familiars",
+	"Author": "Si",
+	"Description": "Adds a Chao familiar from the Sonic series using the FAUNA framework.",
+	"Version": "1.0.0",
+	"UniqueID": "Si.ChaoFam",
+	"UpdateKeys": [ "Nexus:" ],
+	"ContentPackFor": {
+		"UniqueID": "CodysOasis.FAUNA",
+		"MinimumVersion": "1.0.0"
+	},
+}
