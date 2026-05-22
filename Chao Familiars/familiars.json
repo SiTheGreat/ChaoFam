@@ -33,7 +33,7 @@
             "FoodDecayPerDay": 0.34,
             "AttentionDecayPerDay": 0.34, // 0 if speaks false?
           },
-          "Loveditems": ["(O)613", "(O)634", "(O)635", "(O)636", "(O)637", "(O)638", "(O)91", "(O)834", "(O)258", "(O)396", "(O)400", "(O)282", "(O)296", "(O)410", "(O)417", "(O)60"], // fruit, emerald
+          "Loveditems": ["(O)613", "(O)634", "(O)635", "(O)636", "(O)637", "(O)638", "(O)91", "(O)834", "(O)258", "(O)396", "(O)400", "(O)282", "(O)296", "(O)410", "(O)417", "(O)60"], // fruit, emerald // food might not count? check loved items in log
           "HatedItems": ["(O)20", "(O)399", "(O)395", "(O)253", "(O)433", "(O)248"], // coffee, onions
           // Shop
           "ExcludeFromDefaultShop": false,
