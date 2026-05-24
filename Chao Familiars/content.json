@@ -6,6 +6,11 @@
       "Action": "Include",
       "FromFile": "familiars.json",
     },
+
+    {
+      "Action": "Include",
+      "FromFile": "shop.json",
+    },
     
   ]
 }

@@ -16,7 +16,6 @@
   <image source="FamiliarDenTilesheet.png" width="160" height="160"/>
  </tileset>
  <tileset firstgid="101" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
-  <grid orientation="orthogonal" width="0" height="0"/>
   <image source="townInterior" width="512" height="1088"/>
  </tileset>
  <layer id="1" name="Back" width="7" height="10">

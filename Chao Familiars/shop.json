@@ -1,0 +1,44 @@
+{
+  "Changes": [
+
+    // Add shop to town
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      "MapTiles": [
+        {
+          "Position": { "X": 13, "Y": 56 }, // end of entry fence
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "FAUNA.OpenFamiliarShop {{ModId}}_ChaoBlackMarket"
+          }
+        },
+      ],
+    },
+
+
+
+    // Load assets
+    {
+      "Action": "EditData",
+      "Target": "Mods/CodysOasis.FAUNA/Shops",
+      "Entries": {
+        "{{ModId}}_ChaoBlackMarket": {
+          "ShopId": "{{ModId}}_ChaoBlackMarket",
+          "DisplayName": "{{i18n:Si.ChaoFam.BlackMarket.name}}",
+          // "ShopOwner": "", // doesn't seem to do anything or be needed
+          "Stock": [
+
+            {
+              "FamiliarId": "{{ModId}}_baseChao",
+              "Price": "5000",
+              // "Condition": "",
+            },
+
+          ],
+        },
+      },
+    },
+    
+  ]
+}
