@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="7" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="21" nextobjectid="45">
+ <properties>
+  <property name="BrookSounds" value=""/>
+  <property name="DayTiles" value=""/>
+  <property name="Fall_Objects" value=""/>
+  <property name="Light" value=""/>
+  <property name="NightTiles" value=""/>
+  <property name="Outdoors" value="T"/>
+  <property name="Spring_Objects" value=""/>
+  <property name="Summer_Objects" value=""/>
+  <property name="Warp" value=""/>
+  <property name="Winter_Objects" value=""/>
+ </properties>
+ <tileset firstgid="1" name="FamiliarDenTilesheet" tilewidth="16" tileheight="16" tilecount="100" columns="10">
+  <image source="FamiliarDenTilesheet.png" width="160" height="160"/>
+ </tileset>
+ <tileset firstgid="101" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <grid orientation="orthogonal" width="0" height="0"/>
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <layer id="1" name="Back" width="7" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,31,
+1073743904,1073743904,1073743904,1073743904,1073743904,1073743904,0,
+2143,0,0,0,0,2146,0,
+19,19,19,19,19,19,19,
+19,19,19,19,19,19,19,
+19,19,19,19,19,19,19,
+19,19,19,19,19,19,19,
+19,19,19,19,19,19,19,
+19,19,19,19,19,19,19
+</data>
+ </layer>
+ <layer id="19" name="Back1" width="7" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+29,29,29,29,29,29,0,
+77,78,78,78,78,79,0,
+87,88,88,88,88,89,0,
+87,88,88,88,88,89,0,
+87,88,88,88,88,89,0,
+97,98,98,98,98,99,0
+</data>
+ </layer>
+ <layer id="4" name="Buildings" width="7" height="10">
+  <data encoding="csv">
+31,31,31,31,31,31,31,
+2080,2080,2080,2080,2080,2080,22,
+22,22,22,22,22,22,7,
+22,2144,2144,2144,2144,22,7,
+614,502,501,67,68,464,7,
+0,0,0,0,0,0,7,
+0,0,0,0,0,0,7,
+0,0,0,0,0,0,7,
+0,0,0,0,0,0,7,
+0,0,0,0,0,0,7
+</data>
+ </layer>
+ <layer id="6" name="Paths" width="7" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="7" name="Front" width="7" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+1,2,2,2,2,3,0,
+11,22,22,22,22,13,0,
+11,22,22,57,58,13,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,27,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="20" name="Front1" width="7" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,436,437,438,0,0,0,
+0,470,469,0,0,432,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="8" name="AlwaysFront" width="7" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="9" name="Back"/>
+ <objectgroup id="12" name="Buildings"/>
+ <objectgroup id="14" name="Paths"/>
+ <objectgroup id="15" name="Front"/>
+ <objectgroup id="16" name="AlwaysFront"/>
+</map>
