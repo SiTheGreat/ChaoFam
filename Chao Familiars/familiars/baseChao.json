@@ -29,7 +29,7 @@
           // "DefaultShopPrice": 5000,
           // Abilities
           "Assistance": {
-            "BuffIcon": "Mods/{{ModId}}/icons/chaoIcon",
+            "BuffIcon": "Mods/{{ModId}}/icons/baseChaoIcon",
             "InventorySize": 1,
             "AllowDeposit": true,
             "Abilities": [

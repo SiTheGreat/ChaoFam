@@ -1,13 +1,33 @@
 {
   "Changes": [
 
-    // Add shop to town
+    // Add Chao Black Market
+    {
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"FromFile": "maps/chaoBlackMarket.tmx",
+			"ToArea": { "X": 70, "Y": 63, "Width": 4, "Height": 5 },
+			"PatchMode": "Overlay",
+			"When": {
+        "Weather |contains=Rain,Storm,GreenRain": true,
+      },
+		},
     {
       "Action": "EditMap",
-      "Target": "Maps/Town",
+      "Target": "Maps/Forest",
+      "When": {
+        "Weather |contains=Rain,Storm,GreenRain": true,
+      },
       "MapTiles": [
         {
-          "Position": { "X": 13, "Y": 56 }, // end of entry fence
+          "Position": { "X": 71, "Y": 67 },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "FAUNA.OpenFamiliarShop {{ModId}}_ChaoBlackMarket"
+          }
+        },
+        {
+          "Position": { "X": 72, "Y": 67 },
           "Layer": "Buildings",
           "SetProperties": {
             "Action": "FAUNA.OpenFamiliarShop {{ModId}}_ChaoBlackMarket"
@@ -18,7 +38,7 @@
 
 
 
-    // Load assets
+    // Add familiars to shop
     {
       "Action": "EditData",
       "Target": "Mods/CodysOasis.FAUNA/Shops",
@@ -26,7 +46,7 @@
         "{{ModId}}_ChaoBlackMarket": {
           "ShopId": "{{ModId}}_ChaoBlackMarket",
           "DisplayName": "{{i18n:Si.ChaoFam.BlackMarket.name}}",
-          // "ShopOwner": "", // doesn't seem to do anything or be needed
+          // "ShopOwner": "", // doesn't seem to do anything or be required
           "Stock": [
 
             {
