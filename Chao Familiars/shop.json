@@ -6,7 +6,7 @@
 			"Action": "EditMap",
 			"Target": "Maps/Forest",
 			"FromFile": "maps/chaoBlackMarket.tmx",
-			"ToArea": { "X": 70, "Y": 63, "Width": 4, "Height": 5 },
+			"ToArea": { "X": 72, "Y": 63, "Width": 4, "Height": 5 },
 			"PatchMode": "Overlay",
 			"When": {
         "Weather |contains=Rain,Storm,GreenRain": true,
